@@ -1,0 +1,78 @@
+.login {
+  position: relative;
+  height: 100%;
+  background: url("http://s3-us-west-2.amazonaws.com/techvibes/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg")
+    center center no-repeat;
+  background-size: cover;
+  .loginBg {
+    .loginLogo {
+      position: fixed;
+      left: 0;
+      width: 8rem;
+      object-fit: contain;
+      padding-left: 1rem;
+    }
+    .loginBtn {
+      position: fixed;
+      right: 1rem;
+      top: 1rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #e50914;
+      font-weight: 600;
+    }
+    .loginGradient {
+      width: 100%;
+      z-index: 1;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
+    }
+  }
+  .loginBody {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    padding: 1rem;
+    > h1 {
+      font-size: 3.123rem;
+      margin-bottom: 1rem;
+    }
+    > h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    > h3 {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    .loginInput {
+      margin: 1.25rem;
+      > form input {
+        padding: 0.625rem;
+        outline-width: 0;
+        height: 1.875rem;
+        width: 30%;
+        max-width: 37.5rem;
+      }
+      .loginGetStarted {
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        color: white;
+        background-color: #e50914;
+      }
+    }
+  }
+}
